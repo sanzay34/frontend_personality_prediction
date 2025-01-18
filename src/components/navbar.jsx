@@ -8,8 +8,12 @@ const Navbar = ( {extraStyles=''}) => {
 				<ul>About Us</ul>
 			</div>
 			<div className=" absolute right-3 top-12 flex flex-row-reverse px-4 text-lg mr-5">
-				<Button extraStyles="rounded-3xl px-5 border-white">log In</Button>
-				<Button extraStyles=" rounded-3xl px-5 border border-white">Sign Up</Button>
+				<Button extraStyles="rounded-3xl px-5 border-white ">
+					log In
+				</Button>
+				<Button extraStyles=" rounded-3xl px-5 border border-white">
+					Sign Up
+				</Button>
 			</div>
 		</nav>
 	);
