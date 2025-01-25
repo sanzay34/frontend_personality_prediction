@@ -4,7 +4,7 @@ import Button from "./Buttton";
 const Hero = () => {
 	return (
 		<div className="bg-black w-full text-white">
-			<div className="flex  flex-col-2 mt-[150px] ml-[150px] ">
+			<div className="flex  flex-col-2 mt-[150px] ml-[100px] ">
 				<div className="w-[1200px] h-[600px] bg-customGray-50 text-white  font-bold text-3xl rounded-xl relative">
 					<p className=" py-[70px] px-[100px] text-[65px] mb-3 relative">
 						<span className="block mb-[40px]">Discover the</span>

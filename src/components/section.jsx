@@ -1,6 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import Slider from "./Slider";
 const Section = () => {
-  return <div className="w-[1368px] h-[683px] bg-customGray-50 flex items-center justify-center mt-7"></div>;
-}
+	return (
+		<>
+			<div className="flex items-center text-white text-[35px] absolute ml-[750px] mt-[180px] tracking-wide">
+				Personality Traits
+			</div>
+            <Slider/>
+            
+		</>
+	);
+};
 export default Section;
