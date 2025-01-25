@@ -6,6 +6,15 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			animation: {
+				marquee:"marquee 15s linear infinite",
+			},
+			keyframes: {
+				marquee:{
+					"0%" : { transform: "translate(0)" },
+					"100%" : { transform: "translate(-100%)" },	
+				},
+			},
 			colors: {
 				primary: "#1D4ED8", // Custom blue color
 				secondary: "#9333EA", // Custom purple color
@@ -25,7 +34,7 @@ module.exports = {
 				},
 			},
 			rotate: {
-				"17": "11deg",
+				17: "11deg",
 			},
 		},
 	},
