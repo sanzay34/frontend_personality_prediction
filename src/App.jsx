@@ -4,6 +4,7 @@ import Horizontaline from "./components/horizontaline"
 import Section from "./components/section"
 import Check from "./components/check";
 import Autoscroll from "./components/autoscroll";
+import Footer from "./components/footer";
 function App() {
 	return (
 		<>
@@ -14,7 +15,8 @@ function App() {
 				<Hero />
 				<Section />
 				<Check />
-				<Autoscroll/>
+				<Autoscroll />
+				<Footer/>
 			</div>
 		</>
 	);

@@ -6,14 +6,15 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			animation: {
-				marquee:"marquee 15s linear infinite",
-			},
 			keyframes: {
-				marquee:{
-					"0%" : { transform: "translate(0)" },
-					"100%" : { transform: "translate(-100%)" },	
+				marquee: {
+					"0%": { transform: "translateX(0)" }, // Start at 0 (beginning)
+					"50%": { transform: "translateX(-100%)" }, // Move to the left completely
+					"100%": { transform: "translateX(0)" }, // Return to the starting position
 				},
+			},
+			animation: {
+				marquee: "marquee 20s linear infinite",
 			},
 			colors: {
 				primary: "#1D4ED8", // Custom blue color
