@@ -7,12 +7,16 @@ const Navbar = ( {extraStyles=''}) => {
 				<ul>Home</ul>
 				<ul>About Us</ul>
 			</div>
-			<div className=" absolute right-3 top-12 flex flex-row-reverse px-4 text-lg mr-5">
-				<Button extraStyles="rounded-3xl px-5 border-white ">
-					log In
+			<div className=" absolute right-3  top-12 flex flex-row-reverse px-4 text-lg mr-5">
+				<Button extraStyles="rounded-full px-5 border border-white">
+					<span className="hover:bg-customgradient bg-clip-text text-transparent">
+						Admin
+					</span>
 				</Button>
-				<Button extraStyles=" rounded-3xl px-5 border border-white">
-					Sign Up
+				<Button extraStyles=" rounded-full px-5 border border-white ">
+					<span className=" hover:bg-customgradient bg-clip-text text-transparent">
+						Candidate
+					</span>
 				</Button>
 			</div>
 		</nav>

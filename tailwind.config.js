@@ -6,6 +6,17 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				englebert: ['"Englebert"', "sans-serif"],
+				poppins: ["popppins", "sans-serif"],
+			},
+			backgroundImage: {
+				customgradient:
+					"linear-gradient(to left, #40C1C3 0%, #E52764 30%, #CCEE60 59%, #E09B5A 79%,#C74144 100%)",
+
+				customgradientb:
+					"linear-gradient(to left, #40C1C3 0%, #E52764 30%, #CCEE60 70%, #E09B5A 79%,#C74144 100%)",
+			},
 			keyframes: {
 				marquee: {
 					"0%": { transform: "translateX(0)" }, // Start at 0 (beginning)
@@ -21,6 +32,12 @@ module.exports = {
 				secondary: "#9333EA", // Custom purple color
 				accent: "#F59E0B", // Custom yellow color
 				danger: "#EF4444", // Custom red color
+				gblue: "#40C1C3",
+				gpink: "#E52764",
+				gyellow: "#CCEE60",
+				gorange: "#E09B5A",
+				gred: "#C74144",
+
 				customGray: {
 					50: "#2D2B2B",
 					100: "#F3F4F6",

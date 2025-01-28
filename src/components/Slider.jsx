@@ -14,18 +14,6 @@ import Button from "./Buttton";
 const Slider = () => {
 	const slides = [
 		{
-			title: "Neuroticism",
-			description:
-				"Neuroticism is a personality trait that involves a tendency to experience negative emotions, such as anxiety, anger, and sadness. People who are high in neuroticism may also have low self-esteem and feel like they lack social support.",
-			image: neuroticism,
-		},
-		{
-			title: "Extraversion", 
-			description:
-				"Extraversion is a personality trait that describes people who are outgoing, sociable, and energetic. Extraverts are often enthusiastic, assertive, and enjoy being around people.",
-			image: extraversion,
-		},
-		{
 			title: "Openness",
 			description:
 				"Openness is a personality trait that describes how open-minded, imaginative, and creative someone is. People who are high in openness tend to be more willing to try new things and listen to different points of view.",
@@ -38,11 +26,25 @@ const Slider = () => {
 			image: conscientiousness,
 		},
 		{
+			title: "Extraversion",
+			description:
+				"Extraversion is a personality trait that describes people who are outgoing, sociable, and energetic. Extraverts are often enthusiastic, assertive, and enjoy being around people.",
+			image: extraversion,
+		},
+		{
 			title: "Agreeableness",
 			description:
 				"Agreeableness is a personality trait that describes a person's tendency to be kind, cooperative, and empathetic. People who are agreeable are more likely to be trusting, altruistic, and modest.",
 			image: aggreable,
 		},
+		{
+			title: "Neuroticism",
+			description:
+				"Neuroticism is a personality trait that involves a tendency to experience negative emotions, such as anxiety, anger, and sadness. People who are high in neuroticism may also have low self-esteem and feel like they lack social support.",
+			image: neuroticism,
+		},
+		
+			
 	];
 
 	const [currentSlide, setCurrentSlide] = useState(0);
@@ -69,10 +71,10 @@ const Slider = () => {
 					>
 						{/* Text Content */}
 						<div className="text-2xl w-[400px]">
-							<h2 className="font-bold text-4xl mb-4 text-white">
+							<h2 className="font-bold text-[50px] mb-4 text-white">
 								{slide.title}
 							</h2>
-							<p className="text-white">{slide.description}</p>
+							<p className="text-white w-[650px] mt-10">{slide.description}</p>
 						</div>
 
 						{/* Image */}

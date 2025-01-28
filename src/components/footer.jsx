@@ -9,16 +9,16 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
 	return (
 		<div className="bg-customGray-50 w-[1600px] h-[500px] ml-[100px] rounded-3xl mb-[50px] relative px-[42px] py-[58px] text-white">
-			<div className="px-4 text-white text-center border border-white w-[350px] h-[70px] ">
-				<div className="text-5xl font-serif">Aura Traits</div>
-				<div className="text-sm font-light tracking-[8px]">
+			<div className="px-4 text-white text-center border border-white w-[300px] h-[70px] ">
+				<div className="text-5xl font-englebert">Aura Traits</div>
+				<div className="text-sm font-englebert tracking-[7px]">
 					Personality Predictor
 				</div>
 			</div>
-			<div className="mt-8 text-2xl">
+			<div className="mt-8 text-2xl font-poppins">
 				Discover and embrace your unique personality traits.
 			</div>
-			<div className="flex justify-between w-[40%] absolute bottom-[85px] text-xl">
+			<div className="flex justify-between w-[40%] absolute bottom-[85px] text-xl font-poppins">
 				<div>Home</div>
 				<div>About Us</div>
 				<div>Explore</div>
