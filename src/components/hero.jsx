@@ -1,6 +1,6 @@
 import React from "react";
 import Landingpage from "../assets/landingpage.jpg";
-import Button from "./Buttton";
+import Button from "./Button";
 const Hero = () => {
 	return (
 		<div className="bg-black w-full text-white">
@@ -9,11 +9,10 @@ const Hero = () => {
 					<p className=" py-[70px] px-[100px] text-[65px] mb-3 relative">
 						<span className="block mb-[40px]">Discover the</span>
 						<span className="block mb-[40px]">
-							{" "}
 							<span className="bg-customgradient bg-clip-text text-transparent ">
-								essence
-							</span>{" "}
-							of who
+								Essence
+							</span>
+							<span> of who</span>
 						</span>
 						<span className="block"> you are</span>
 					</p>

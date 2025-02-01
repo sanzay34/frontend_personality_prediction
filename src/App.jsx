@@ -1,25 +1,14 @@
-import Navbar from "./components/navbar"
-import Hero from "./components/hero";
-import Horizontaline from "./components/horizontaline"
-import Section from "./components/section"
-import Check from "./components/check";
-import Autoscroll from "./components/autoscroll";
-import Footer from "./components/footer";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./Routes/AppRoutes"; // Your routes component
+import Homepage from "./pages/Homepage"; // Your Homepage component
+
 function App() {
 	return (
-		<>
-			<div className="w-full min-h-screen bg-black">
-				<Navbar/>
-				
-				<Horizontaline/>
-				<Hero />
-				<Section />
-				<Check />
-				<Autoscroll />
-				<Footer/>
-			</div>
-		</>
+		<Router>
+			<AppRoutes /> {/* AppRoutes will handle routing */}
+		</Router>
 	);
-	
- }
-export default App
+}
+
+export default App;

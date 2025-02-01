@@ -1,4 +1,4 @@
-import Button from "./Buttton";
+import Button from "./Button";
 import feature from "../assets/feature.jpg";
 const Check = () => {
 	return (
@@ -7,19 +7,21 @@ const Check = () => {
 				<div className="mt-[34px] ml-[94px] ">
 					<div className="relative">
 						<p className="text-[65px] font-bold ">
-							<div className="">Find your</div>
-							<div className="absolute top-[80px] bg-customgradient bg-clip-text text-transparent ">
+							<span className="block">Find your</span>
+							<span className="absolute top-[80px] bg-customgradient bg-clip-text text-transparent ">
 								Personality
-							</div>
-							<div className="absolute top-[160px]">Traits</div>
+							</span>
+							<span className="absolute block top-[160px]">Traits</span>
 						</p>
 					</div>
 
 					<p className="text-[25px] absolute top-[300px] left-[100px]">
-						<div>Uncover your personaity traits,unlock your</div>
-						<div>potential and true self</div>
+						<span className="block">
+							Uncover your personaity traits,unlock your
+						</span>
+						<span className="block">potential and true self</span>
 					</p>
-					<Button extraStyles=" mt-[80px] text-[25px] w-[180px] h-[55px] font-semibold border border-white bg-white hover:bg-black absolute top-[340px]">
+					<Button extraStyles=" mt-[80px] text-[25px] w-[180px] h-[55px] rounded-lg font-semibold border border-white bg-white hover:bg-black absolute top-[340px]">
 						<span className="bg-customgradientb bg-clip-text text-transparent">
 							Check Now
 						</span>

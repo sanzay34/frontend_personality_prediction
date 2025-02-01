@@ -3,7 +3,7 @@ import mission from "../assets/mission.jpg";
 import value from "../assets/value.jpg";
 import vision from "../assets/vision.jpg";
 
-const Autoscroll = () => {
+const AutoScroll = () => {
 	const items = [
 		<div
 			key="value"
@@ -67,4 +67,4 @@ const Autoscroll = () => {
 	);
 };
 
-export default Autoscroll;
+export default AutoScroll;

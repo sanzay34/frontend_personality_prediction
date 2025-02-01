@@ -9,7 +9,7 @@ import extraversion from "../assets/extraversion.jpg";
 import openness from "../assets/openness.jpg";
 import conscientiousness from "../assets/conscientiousness.jpg";
 import aggreable from "../assets/aggreable.jpg";
-import Button from "./Buttton";
+import Button from "./Button";
 
 const Slider = () => {
 	const slides = [
@@ -43,18 +43,16 @@ const Slider = () => {
 				"Neuroticism is a personality trait that involves a tendency to experience negative emotions, such as anxiety, anger, and sadness. People who are high in neuroticism may also have low self-esteem and feel like they lack social support.",
 			image: neuroticism,
 		},
-		
-			
 	];
 
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const nextSlide = () => {
-		setCurrentSlide((prev) => (prev + 1 ) % slides.length); // Cycle to the next slide
+		setCurrentSlide((prev) => (prev + 1) % slides.length); // Cycle to the next slide
 	};
 
 	const prevSlide = () => {
-		setCurrentSlide((prev) => (prev - 1 ) % slides.length); // Cycle to the previous slide
+		setCurrentSlide((prev) => (prev - 1) % slides.length); // Cycle to the previous slide
 	};
 
 	return (

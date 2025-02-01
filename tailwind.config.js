@@ -37,7 +37,8 @@ module.exports = {
 				gyellow: "#CCEE60",
 				gorange: "#E09B5A",
 				gred: "#C74144",
-
+				customgradientbb:
+					"linear-gradient(to left, #40C1C3 0%, #E52764 30%, #CCEE60 70%, #E09B5A 79%,#C74144 100%)",
 				customGray: {
 					50: "#2D2B2B",
 					100: "#F3F4F6",
