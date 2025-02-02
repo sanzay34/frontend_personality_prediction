@@ -9,7 +9,7 @@ import extraversion from "../assets/extraversion.jpg";
 import openness from "../assets/openness.jpg";
 import conscientiousness from "../assets/conscientiousness.jpg";
 import aggreable from "../assets/aggreable.jpg";
-import Button from "./Button";
+import Button from "./Buttton";
 
 const Slider = () => {
 	const slides = [

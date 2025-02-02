@@ -1,6 +1,6 @@
 import React from "react";
 import Landingpage from "../assets/landingpage.jpg";
-import Button from "./Button";
+import Button from "./Buttton";
 const Hero = () => {
 	return (
 		<div className="bg-black w-full text-white">
