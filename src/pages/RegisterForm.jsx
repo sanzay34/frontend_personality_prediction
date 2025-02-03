@@ -3,14 +3,13 @@ import Horizontaline from "../components/Horizontaline";
 import { useNavigate } from "react-router-dom";
 import Input from "../components/input";
 import Button from "../components/Button";
-import Questions from "./Questions";
 const RegisterForm = () => {
 	const navigate = useNavigate();
 	const handleHomeClick = () => {
 		navigate("/Homepage");
 	};
 	const handleNextCLick = () => {
-		navigate("/Questions")
+		navigate("/Questions");
 	}
 	const [formData, setFormData] = useState({
 		Firstname: "",
@@ -72,7 +71,7 @@ const RegisterForm = () => {
 									placeholder="Full Name"
 									name="Firstname"
 									value={formData.Firstname}
-									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 
 								<Input
@@ -80,7 +79,7 @@ const RegisterForm = () => {
 									placeholder="Email"
 									name="Email"
 									value={formData.Email}
-									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className=" flex gap-[220px]  text-black mt-4 ">
@@ -89,7 +88,7 @@ const RegisterForm = () => {
 									placeholder="Phone Number"
 									name="Phone"
 									value={formData.Phone}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 
 								<Input
@@ -97,7 +96,7 @@ const RegisterForm = () => {
 									placeholder="Address"
 									name="Address"
 									value={formData.Address}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="text-start text-[30px] font-bold mt-4">
@@ -109,7 +108,7 @@ const RegisterForm = () => {
 									placeholder="Degree"
 									name="Degree"
 									value={formData.Degree}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 
 								<Input
@@ -117,7 +116,7 @@ const RegisterForm = () => {
 									placeholder="University"
 									name="University"
 									value={formData.University}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="flex gap-[220px]  text-black mt-4">
@@ -126,7 +125,7 @@ const RegisterForm = () => {
 									placeholder="Graduation Year"
 									name="Graduationyear"
 									value={formData.Graduationyear}
-									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="text-start text-[30px] font-bold mt-4">
@@ -138,7 +137,7 @@ const RegisterForm = () => {
 									placeholder="Job Title"
 									name="Jobtitle"
 									value={formData.Jobtitle}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 
 								<Input
@@ -146,7 +145,7 @@ const RegisterForm = () => {
 									placeholder="Duration"
 									name="Duration"
 									value={formData.Duration}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="flex gap-[220px]  text-black mt-4">
@@ -155,7 +154,7 @@ const RegisterForm = () => {
 									placeholder="Company"
 									name="Company"
 									value={formData.Company}
-									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="text-start text-[30px] font-bold mt-4">
@@ -167,7 +166,7 @@ const RegisterForm = () => {
 									placeholder="Project Title"
 									name="Projecttitle"
 									value={formData.Projecttitle}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 
 								<Input
@@ -175,7 +174,7 @@ const RegisterForm = () => {
 									placeholder="Project Description"
 									name="Projectdescription"
 									value={formData.Projectdescription}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="text-start text-[30px] font-bold mt-4">
@@ -187,14 +186,14 @@ const RegisterForm = () => {
 									placeholder="Certification Title"
 									name="Certificationtitle"
 									value={formData.Certificationtitle}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 								<Input
 									onChange={handleFormChange}
 									placeholder="Certification Description"
 									name="Certificationdescription"
 									value={formData.Certificationdescription}
-									inputStyles="rounded-xl w-[450px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="text-start text-[30px] font-bold mt-4">
@@ -206,7 +205,7 @@ const RegisterForm = () => {
 									placeholder="Skills"
 									name="Skills"
 									value={formData.Skills}
-									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl mb-[60px]"
+									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl mb-[60px]"
 								/>
 							</div>
 
