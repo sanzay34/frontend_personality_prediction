@@ -1,4 +1,4 @@
-import Button from "./Buttton";
+import Button from "./Button";
 import feature from "../assets/feature.jpg";
 const Check = () => {
 	return (

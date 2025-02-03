@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Buttton";
+import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 const Navbar = ({ extraStyles = "" }) => {
 	const navigate = useNavigate(); // Initialize the navigate function

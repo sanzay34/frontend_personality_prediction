@@ -9,7 +9,7 @@ const Button = ({
 			<button
 				disabled={disabled}
 				onClick={handleClick}
-				className={`p-1 w-30 m-3 text-md border border-black cursor-pointer  shadow-sm ${extraStyles} `}
+				className={`p-1 m-3 text-md border border-black cursor-pointer  shadow-sm ${extraStyles} `}
 			>
 				{children}
 			</button>
