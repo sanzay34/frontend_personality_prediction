@@ -71,7 +71,7 @@ const RegisterForm = () => {
 									placeholder="Full Name"
 									name="Firstname"
 									value={formData.Firstname}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
 								/>
 
 								<Input
@@ -79,7 +79,7 @@ const RegisterForm = () => {
 									placeholder="Email"
 									name="Email"
 									value={formData.Email}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className=" flex gap-[220px]  text-black mt-4 ">
@@ -125,7 +125,7 @@ const RegisterForm = () => {
 									placeholder="Graduation Year"
 									name="Graduationyear"
 									value={formData.Graduationyear}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="text-start text-[30px] font-bold mt-4">
@@ -154,7 +154,7 @@ const RegisterForm = () => {
 									placeholder="Company"
 									name="Company"
 									value={formData.Company}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl"
 								/>
 							</div>
 							<div className="text-start text-[30px] font-bold mt-4">
@@ -186,7 +186,7 @@ const RegisterForm = () => {
 									placeholder="Certification Title"
 									name="Certificationtitle"
 									value={formData.Certificationtitle}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl"
 								/>
 								<Input
 									onChange={handleFormChange}
@@ -205,11 +205,11 @@ const RegisterForm = () => {
 									placeholder="Skills"
 									name="Skills"
 									value={formData.Skills}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl mb-[60px]"
+									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl mb-[60px]"
 								/>
 							</div>
 
-							<Button handleClick={handleNextCLick} extraStyles="px-10 py-2 text-2xl bg-white hover:bg-black rounded-lg absolute right-[80px] top-[950px] border-secondary">
+							<Button handleClick={handleNextCLick} extraStyles="px-10 py-2 text-2xl bg-white hover:bg-black rounded-lg absolute right-[80px] top-[1000px] border-secondary">
 								<span className="bg-customgradientb bg-clip-text text-transparent ">
 									Next
 								</span>
