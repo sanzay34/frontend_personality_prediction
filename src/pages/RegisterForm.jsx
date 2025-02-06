@@ -3,14 +3,12 @@ import Horizontaline from "../components/Horizontaline";
 import { useNavigate } from "react-router-dom";
 import Input from "../components/input";
 import Button from "../components/Button";
+
 const RegisterForm = () => {
 	const navigate = useNavigate();
-	const handleHomeClick = () => {
-		navigate("/Homepage");
-	};
-	const handleNextCLick = () => {
-		navigate("/Questions");
-	}
+	const handleHomeClick = () => navigate("/Homepage");
+	const handleNextClick = () => navigate("/Questions");
+
 	const [formData, setFormData] = useState({
 		Firstname: "",
 		Email: "",
@@ -26,191 +24,161 @@ const RegisterForm = () => {
 		Projectdescription: "",
 		Certificationtitle: "",
 		Certificationdescription: "",
-		Skills:"",
+		Skills: "",
 	});
+
 	const handleFormChange = (e) => {
-		setFormData({
-			...formData,
-			[e.target.name]: e.target.value,
-		});
+		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
 	return (
-		<div className=" min-h-screen text-white relative mb-10">
-			<Horizontaline extrastyles="mt-12"></Horizontaline>
+		<div className="min-h-screen text-white relative mb-10 px-4 sm:px-8">
+			<Horizontaline extrastyles="mt-12" />
 			<div
 				onClick={handleHomeClick}
-				className="absolute top-[-4px] left-[58px] text-2xl cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent "
+				className="absolute top-[-4px] left-[98px] text-xl md:text-2xl cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
 			>
 				Home
 			</div>
-			<div className="mt-10 items-center justify-center flex p-6 ">
-				<div className="h-[110px] w-[1300px] rounded-3xl bg-gradient-to-l from-gblue via-red-500 to-yellow-500 p-[1px] ">
-					<div className="flex h-full w-full items-center justify-center bg-customGray-50 back rounded-3xl">
-						<div className="flex-row justify-center items-center">
-							<div className="text-[46px] font-bold ">
+			<div className="mt-10 flex justify-center">
+				<div className="h-[110px] w-full max-w-6xl rounded-3xl bg-gradient-to-l from-gblue via-red-500 to-yellow-500 p-[1px]">
+					<div className="flex h-full w-full items-center justify-center bg-customGray-50 rounded-3xl">
+						<div className="text-center">
+							<h1 className="text-[32px] md:text-[46px] font-bold">
 								Register your Profile
-							</div>
-							<div className=" text-3xl text-center">
+							</h1>
+							<p className="text-lg md:text-3xl">
 								Fill out Your CV Information
-							</div>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="flex justify-center items-center absolute ml-[253px] px] mt-[70px] mb-[100px] ">
-				<div className="h-auto w-[1300px] rounded-3xl bg-gradient-to-l from-gblue via-red-500 to-yellow-500 p-[1px] mb-32">
-					<div className=" h-full w-full bg-customGray-50 flex rounded-3xl back p-[20px] mb-auto">
-						<form className="ml-[60px] my-5 flex-col ">
-							<div className="text-start text-[30px] font-bold">
+			<div className="flex justify-center mt-10">
+				<div className="w-full max-w-6xl rounded-3xl bg-gradient-to-l from-gblue via-red-500 to-yellow-500 p-[1px]">
+					<div className="bg-customGray-50 rounded-3xl p-6 md:p-10">
+						<form>
+							<h2 className="text-xl md:text-2xl font-bold">
 								Personal Details
-							</div>
-							<div className=" flex gap-[220px]  text-black mt-4 ">
+							</h2>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Full Name"
 									name="Firstname"
 									value={formData.Firstname}
-									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
-
 								<Input
 									onChange={handleFormChange}
 									placeholder="Email"
 									name="Email"
 									value={formData.Email}
-									inputStyles="rounded-xl w-[460px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
 							</div>
-							<div className=" flex gap-[220px]  text-black mt-4 ">
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Phone Number"
 									name="Phone"
 									value={formData.Phone}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
-
 								<Input
 									onChange={handleFormChange}
 									placeholder="Address"
 									name="Address"
 									value={formData.Address}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
 							</div>
-							<div className="text-start text-[30px] font-bold mt-4">
+							<h2 className="text-xl md:text-2xl font-bold mt-6">
 								Qualification
-							</div>
-							<div className=" flex gap-[220px]  text-black mt-4 ">
+							</h2>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Degree"
 									name="Degree"
 									value={formData.Degree}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
-
 								<Input
 									onChange={handleFormChange}
 									placeholder="University"
 									name="University"
 									value={formData.University}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
 							</div>
-							<div className="flex gap-[220px]  text-black mt-4">
+							<div className="mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Graduation Year"
 									name="Graduationyear"
 									value={formData.Graduationyear}
-									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full md:w-[49%] h-[50px] text-xl"
 								/>
 							</div>
-							<div className="text-start text-[30px] font-bold mt-4">
-								Experience
-							</div>
-							<div className=" flex gap-[220px]  text-black mt-4 ">
+							<h2 className="text-xl md:text-2xl font-bold mt-6">Experience</h2>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Job Title"
 									name="Jobtitle"
 									value={formData.Jobtitle}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
-
 								<Input
 									onChange={handleFormChange}
 									placeholder="Duration"
 									name="Duration"
 									value={formData.Duration}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
 							</div>
-							<div className="flex gap-[220px]  text-black mt-4">
+							<div className="mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Company"
 									name="Company"
 									value={formData.Company}
-									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full md:w-[49%] h-[50px] text-xl"
 								/>
 							</div>
-							<div className="text-start text-[30px] font-bold mt-4">
-								Projects
-							</div>
-							<div className=" flex gap-[220px]  text-black mt-4 ">
+							<h2 className="text-xl md:text-2xl font-bold mt-6">Projects</h2>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Project Title"
 									name="Projecttitle"
 									value={formData.Projecttitle}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
-
 								<Input
 									onChange={handleFormChange}
 									placeholder="Project Description"
 									name="Projectdescription"
 									value={formData.Projectdescription}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
+									inputStyles="rounded-xl w-full h-[50px] text-xl"
 								/>
 							</div>
-							<div className="text-start text-[30px] font-bold mt-4">
-								Certifications
-							</div>
-							<div className=" flex gap-[220px]  text-black mt-4 ">
-								<Input
-									onChange={handleFormChange}
-									placeholder="Certification Title"
-									name="Certificationtitle"
-									value={formData.Certificationtitle}
-									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl"
-								/>
-								<Input
-									onChange={handleFormChange}
-									placeholder="Certification Description"
-									name="Certificationdescription"
-									value={formData.Certificationdescription}
-									inputStyles="rounded-xl w-[455px] h-[50px] text-2xl"
-								/>
-							</div>
-							<div className="text-start text-[30px] font-bold mt-4">
-								Skills
-							</div>
-							<div className=" flex gap-[220px]  text-black mt-4 ">
+							<h2 className="text-xl md:text-2xl font-bold mt-6">Skills</h2>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 								<Input
 									onChange={handleFormChange}
 									placeholder="Skills"
 									name="Skills"
 									value={formData.Skills}
-									inputStyles="rounded-xl w-[456px] h-[50px] text-2xl mb-[60px]"
+									inputStyles="rounded-xl w-full d:w-[49%] h-[50px] text-xl"
 								/>
 							</div>
-
-							<Button handleClick={handleNextCLick} extraStyles="px-10 py-2 text-2xl bg-white hover:bg-black rounded-lg absolute right-[80px] top-[1000px] border-secondary">
-								<span className="bg-customgradientb bg-clip-text text-transparent ">
+							<Button
+								handleClick={handleNextClick}
+								extraStyles="mt-6 ml-[-1px] md:ml-[900px]  px-6 py-2 text-xl  flex items-center justify-center bg-white hover:bg-black rounded-lg border-secondary w-full md:w-auto "
+							>
+								<span className="bg-customgradientb bg-clip-text text-transparent">
 									Next
 								</span>
 							</Button>
