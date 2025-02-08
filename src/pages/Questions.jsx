@@ -153,7 +153,7 @@ const Questions = () => {
 								<div className="flex justify-center mt-6">
 									<Button
 										handleClick={handleSubmitClick}
-										extraStyles="  mt-6 ml-[-1px] md:ml-[900px] text-white px-6 py-2 text-xl  flex items-center justify-center bg-white hover:bg-black rounded-lg border-secondary w-full md:w-auto"
+										extraStyles="  mt-6 ml-[-1px] text-white px-6 py-2 text-xl  flex items-center justify-center bg-white hover:bg-black rounded-lg border-secondary w-full md:w-auto"
 									>
 										<span className="bg-customgradientb bg-clip-text text-transparent">
 											Submit

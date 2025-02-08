@@ -2,13 +2,16 @@ import React from "react";
 import Landingpage from "../assets/landingpage.jpg";
 import Button from "./Button";
 const Hero = () => {
+	const handleExploreClick = () => {
+		document.getElementById("explore-section").scrollIntoView({behavior:"smooth"})
+	}
 	return (
 		<div className="bg-black w-full text-white">
-			<div className="flex  flex-col-2 mt-[150px] ml-[100px] font-poppins">
-				<div className="w-[1200px] h-[600px] bg-customGray-50 text-white  font-bold text-3xl rounded-xl relative">
-					<p className=" py-[70px] px-[100px] text-[65px] mb-3 relative">
-						<span className="block mb-[40px]">Discover the</span>
-						<span className="block mb-[40px]">
+			<div className="flex flex-col   mt-[100px] md:mt-[150px] ml-[100px] font-poppins">
+				<div className="md:w-[1200px] md:h-[600px] h-auto  bg-customGray-50 text-white font-bold text-3xl rounded-xl relative">
+					<p className=" py-[70px] md:px-[100px] text-[40px] md:text-[65px] mb-3 ">
+						<span className="block mb-[20px] md:mb-[40px]">Discover the</span>
+						<span className="block mb-[20px] md:mb-[40px]">
 							<span className="bg-customgradient bg-clip-text text-transparent ">
 								Essence
 							</span>
@@ -16,7 +19,7 @@ const Hero = () => {
 						</span>
 						<span className="block"> you are</span>
 					</p>
-					<p className="text-[20px] font-normal px-[100px] absolute top-[300px]">
+					<p className="md:text-[20px] text-[15px] font-poppins px-[100px] absolute top-[300px]">
 						<span className="block">
 							Explore your personality like never before.Find out
 						</span>
@@ -25,17 +28,17 @@ const Hero = () => {
 						</span>
 						<span className="block">potential and essence.</span>
 					</p>
-					<Button extraStyles="rounded-lg px-7 py-2 border-white text-[25px] ml-[100px] mt-[130px]  text-center bg-white hover:bg-black  ">
-						<span className="bg-customgradientb bg-clip-text text-transparent">
+					<Button extraStyles="rounded-lg md:px-7 md:py-2 border-white md:text-[25px]  ml-[100px] mt-[130px]  text-center bg-white hover:bg-black  ">
+						<span onClick={handleExploreClick} className="bg-customgradientb bg-clip-text text-transparent">
 							Explore
 						</span>
 					</Button>
 				</div>
-				<div className="w-[695px] h-[695px] bg-customGray-50 flex items-center justify-center rotate-[11deg] absolute right-[150px] top-[268px]">
+				<div className=" w-[320px] h-[320px] md:w-[695px] md:h-[695px] bg-customGray-50 flex items-center justify-center rotate-[11deg] absolute right-[150px] top-[268px]">
 					<img
 						src={Landingpage}
 						alt="Landingpage image"
-						className="w-[620px] h-[620px]
+						className=" w-[300px] h-[300px] md:w-[620px] md:h-[620px]
 						 "
 					/>
 				</div>

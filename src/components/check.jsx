@@ -1,6 +1,11 @@
 import Button from "./Button";
 import feature from "../assets/feature.jpg";
+import { useNavigate } from "react-router-dom";
 const Check = () => {
+	const navigate = useNavigate()
+	const handleCheckNow = () => {
+		navigate("/RegisterForm")
+	}
 	return (
 		<div className=" flex mt-[150px] ml-[150px] h-[650px] w-[1600px] bg-black absolute ">
 			<div className="flex-col-2 text-white flex justify-evenly">
@@ -21,7 +26,7 @@ const Check = () => {
 						</span>
 						<span className="block">potential and true self</span>
 					</p>
-					<Button extraStyles=" mt-[80px] text-[25px] w-[180px] h-[55px] rounded-lg font-semibold border border-white bg-white hover:bg-black absolute top-[340px]">
+					<Button handleClick={handleCheckNow} extraStyles=" mt-[80px] text-[25px] w-[180px] h-[55px] rounded-lg font-semibold border border-white bg-white hover:bg-black absolute top-[340px]">
 						<span className="bg-customgradientb bg-clip-text text-transparent">
 							Check Now
 						</span>

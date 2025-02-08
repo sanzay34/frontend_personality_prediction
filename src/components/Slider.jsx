@@ -56,7 +56,7 @@ const Slider = () => {
 	};
 
 	return (
-		<div className="w-[1600px] h-[700px] bg-customGray-50 flex items-center overflow-hidden justify-center mt-[250px] rounded-xl ml-[100px] relative">
+		<div id="explore-section" className="w-[1600px] h-[700px] bg-customGray-50 flex items-center overflow-hidden justify-center mt-[250px] rounded-xl ml-[100px] relative">
 			{/* Slide Container with Animation */}
 			<div
 				className="flex transition-transform duration-500 ease-in-out"

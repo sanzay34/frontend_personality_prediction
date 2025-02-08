@@ -51,7 +51,7 @@ const AutoScroll = () => {
 	];
 
 	return (
-		<div className="relative  h-[800px] overflow-hidden mt-[1000px] ml-[100px] mr-[100px]">
+		<div  id="scroll-section" className="relative  h-[800px] overflow-hidden mt-[1000px] ml-[100px] mr-[100px]">
 			<div className="flex gap-[80px] animate-marquee whitespace-nowrap">
 				{/* Duplicate the items array to ensure infinite scrolling */}
 				{[...items, ...items].map((item, index) => (

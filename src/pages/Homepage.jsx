@@ -5,7 +5,6 @@ import Section from "../components/section";
 import Check from "../components/check";
 import AutoScroll from "../components/AutoScroll";
 import Footer from "../components/footer";
-
 const Homepage = () => {
 	return (
 		<>

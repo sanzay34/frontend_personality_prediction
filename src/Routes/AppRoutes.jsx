@@ -4,6 +4,7 @@ import RegisterForm from "../pages/RegisterForm";
 import Homepage from "../pages/Homepage";
 import Questions from "../pages/Questions";
 import Thanku from "../pages/Thanku";
+import AutoScroll from "../components/AutoScroll";
 const AppRoutes = () => {
 	return (
 		<Routes>
@@ -12,6 +13,7 @@ const AppRoutes = () => {
 			<Route path="/Homepage" element={<Homepage />} />
 			<Route path="/Questions" element={<Questions />} />
 			<Route path="/Thanku" element={<Thanku />} />
+			
 		</Routes>
 	);
 };
