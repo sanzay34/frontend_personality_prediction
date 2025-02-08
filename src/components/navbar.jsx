@@ -13,7 +13,7 @@ const Navbar = () => {
 			.scrollIntoView({ behavior: "smooth" });
 	};
 	return (
-		<nav className="flex justify-between items-baseline text-lg  pt-8 relative text-white flex-wrap md:text-xl lg:text-2xl ">
+		<nav id="navbar" className="flex justify-between items-baseline text-lg  pt-8 relative text-white flex-wrap md:text-xl lg:text-2xl ">
 			<div className=" absolute left-2 top-[70px] flex gap-4 px-6 text-lg ml-7 md:text-xl lg:text-2xl">
 				<ul className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
 					Home

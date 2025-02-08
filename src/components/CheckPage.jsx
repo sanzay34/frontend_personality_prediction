@@ -1,7 +1,7 @@
 import Button from "./Button";
 import feature from "../assets/feature.jpg";
 import { useNavigate } from "react-router-dom";
-const Check = () => {
+const CheckPage = () => {
 	const navigate = useNavigate()
 	const handleCheckNow = () => {
 		navigate("/RegisterForm")
@@ -46,4 +46,4 @@ const Check = () => {
 	);
 };
 
-export default Check;
+export default CheckPage;
