@@ -57,7 +57,7 @@ const RegisterForm = () => {
 			<div className="flex justify-center mt-10">
 				<div className="w-full max-w-6xl rounded-3xl bg-gradient-to-l from-gblue via-red-500 to-yellow-500 p-[1px]">
 					<div className="bg-customGray-50 rounded-3xl p-6 md:p-10">
-						<form>
+						<form className="text-black">
 							<h2 className="text-xl md:text-2xl font-bold">
 								Personal Details
 							</h2>
@@ -68,22 +68,27 @@ const RegisterForm = () => {
 									name="Firstname"
 									value={formData.Firstname}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 								<Input
+									type="email"
 									onChange={handleFormChange}
 									placeholder="Email"
 									name="Email"
 									value={formData.Email}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
 								<Input
+									type="number"
 									onChange={handleFormChange}
 									placeholder="Phone Number"
 									name="Phone"
 									value={formData.Phone}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 								<Input
 									onChange={handleFormChange}
@@ -91,6 +96,7 @@ const RegisterForm = () => {
 									name="Address"
 									value={formData.Address}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<h2 className="text-xl md:text-2xl font-bold mt-6">
@@ -103,6 +109,7 @@ const RegisterForm = () => {
 									name="Degree"
 									value={formData.Degree}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 								<Input
 									onChange={handleFormChange}
@@ -110,6 +117,7 @@ const RegisterForm = () => {
 									name="University"
 									value={formData.University}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<div className="mt-4">
@@ -119,6 +127,7 @@ const RegisterForm = () => {
 									name="Graduationyear"
 									value={formData.Graduationyear}
 									inputStyles="rounded-xl w-full md:w-[49%] h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<h2 className="text-xl md:text-2xl font-bold mt-6">Experience</h2>
@@ -129,6 +138,7 @@ const RegisterForm = () => {
 									name="Jobtitle"
 									value={formData.Jobtitle}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 								<Input
 									onChange={handleFormChange}
@@ -136,6 +146,7 @@ const RegisterForm = () => {
 									name="Duration"
 									value={formData.Duration}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<div className="mt-4">
@@ -145,6 +156,7 @@ const RegisterForm = () => {
 									name="Company"
 									value={formData.Company}
 									inputStyles="rounded-xl w-full md:w-[49%] h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<h2 className="text-xl md:text-2xl font-bold mt-6">Projects</h2>
@@ -155,6 +167,7 @@ const RegisterForm = () => {
 									name="Projecttitle"
 									value={formData.Projecttitle}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 								<Input
 									onChange={handleFormChange}
@@ -162,6 +175,7 @@ const RegisterForm = () => {
 									name="Projectdescription"
 									value={formData.Projectdescription}
 									inputStyles="rounded-xl w-full h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<h2 className="text-xl md:text-2xl font-bold mt-6">Skills</h2>
@@ -172,6 +186,7 @@ const RegisterForm = () => {
 									name="Skills"
 									value={formData.Skills}
 									inputStyles="rounded-xl w-full d:w-[49%] h-[50px] text-xl"
+									required
 								/>
 							</div>
 							<Button
