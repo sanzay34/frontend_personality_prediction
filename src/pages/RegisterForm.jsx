@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Horizontaline from "../components/Horizontaline";
 import { useNavigate } from "react-router-dom";
-import Input from "./components/Input"
+import Input from "../components/Input"
 import Button from "../components/Button";
 
 const RegisterForm = () => {
