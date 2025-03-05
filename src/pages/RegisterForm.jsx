@@ -189,6 +189,17 @@ const RegisterForm = () => {
 									required
 								/>
 							</div>
+							<h2 className="text-xl md:text-2xl font-bold mt-6">Personal Description</h2>
+							<div className="min-w-12 min-h-3 gap-6 mt-4">
+								<Input
+									onChange={handleFormChange}
+									placeholder="Personal Description"
+									name="Personaldesription"
+									value={formData.Personaldescription}
+									inputStyles="rounded-xl w-[100%] d:w-[49%] h-[50px] text-xl"
+									required
+								/>
+							</div>
 							<Button
 								handleClick={handleNextClick}
 								extraStyles=" mt-6 ml-[-1px] text-white px-6 py-2 text-xl  flex items-center justify-center bg-white hover:bg-black rounded-lg border-secondary w-full md:w-auto "
