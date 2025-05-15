@@ -15,9 +15,9 @@ const Navbar = () => {
 	return (
 		<nav
 			id="navbar"
-			className="flex justify-between items-baseline pt-8 relative text-white flex-wrap "
+			className="flex justify-between items-baseline pt-4 lg:pt-8 relative text-white flex-wrap "
 		>
-			<div className=" absolute  left-1 top-[70px] flex gap-2 lg:gap-4 px-6 lg:ml-7 ml-1 text-xs lg:text-2xl">
+			<div className=" absolute top-[70px] flex gap-2 lg:gap-4 px-6 lg:ml-7 ml-1 text-xs lg:text-2xl">
 				<ul className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
 					Home
 				</ul>
