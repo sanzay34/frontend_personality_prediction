@@ -7,11 +7,11 @@ const Hero = () => {
 	}
 	return (
 		<div className="bg-black w-full text-white">
-			<div className="flex flex-col   mt-[100px] md:mt-[150px] ml-[100px] font-poppins">
-				<div className="md:w-[1200px] md:h-[600px] h-auto  bg-customGray-50 text-white font-bold text-3xl rounded-xl relative">
-					<p className=" py-[70px] md:px-[100px] text-[40px] md:text-[65px] mb-3 ">
-						<span className="block mb-[20px] md:mb-[40px]">Discover the</span>
-						<span className="block mb-[20px] md:mb-[40px]">
+			<div className="flex flex-col   mt-[100px] lg:mt-[150px] ml-[100px] font-poppins">
+				<div className="lg:w-[1200px] lg:h-[600px] h-auto  bg-customGray-50 text-white font-bold text-3xl rounded-xl relative">
+					<p className=" py-[70px] lg:px-[100px] text-[40px] md:text-[65px] mb-3 ">
+						<span className="block mb-[20px] lg:mb-[40px]">Discover the</span>
+						<span className="block mb-[20px] lg:mb-[40px]">
 							<span className="bg-customgradient bg-clip-text text-transparent ">
 								Essence
 							</span>

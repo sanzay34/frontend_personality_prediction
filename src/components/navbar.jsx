@@ -13,25 +13,31 @@ const Navbar = () => {
 			.scrollIntoView({ behavior: "smooth" });
 	};
 	return (
-		<nav id="navbar" className="flex justify-between items-baseline text-lg  pt-8 relative text-white flex-wrap md:text-xl lg:text-2xl ">
-			<div className=" absolute left-2 top-[70px] flex gap-4 px-6 text-lg ml-7 md:text-xl lg:text-2xl">
+		<nav
+			id="navbar"
+			className="flex justify-between items-baseline pt-8 relative text-white flex-wrap "
+		>
+			<div className=" absolute left-2 top-[70px] flex gap-2 lg:gap-4 px-6 lg:ml-7 ml-3 text-xs lg:text-2xl">
 				<ul className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
 					Home
 				</ul>
-				<ul onClick={handleAboutusClick} className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
+				<ul
+					onClick={handleAboutusClick}
+					className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent "
+				>
 					About Us
 				</ul>
 			</div>
-			<div className=" absolute -right-1 md:right-2 lg:right-4  top-12 flex text-sm mr-5 md:text-lg ">
+			<div className=" absolute -right-3 lg:right-4 top-12 flex text-xs mr-3 lg:mr-5 lg:text-lg ">
 				<div className="hover:bg-customgradientb hover:bg-clip-text hover:text-transparent">
-					<Button extraStyles="rounded-full px-2 md:px-4 lg:px-5 border border-white">
+					<Button extraStyles=" rounded-lg lg:rounded-full px-1 lg:px-5 border border-white">
 						Admin
 					</Button>
 				</div>
 				<div className=" hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
 					<Button
 						handleClick={handleCandidateClick}
-						extraStyles=" rounded-full cursor-pointer px-5 border-1 border-white hover:border-2 hover:border-customgradientbb "
+						extraStyles="  rounded-lg lg:rounded-full cursor-pointer px-1 lg:px-5 border-1 border-white hover:border-customgradientbb "
 					>
 						Candidate
 					</Button>

@@ -84,8 +84,7 @@ const Footer = () => {
 			</div>
 			<hr className="absolute bottom-[75px] left-0 w-full border-t-2 border-white" />
 			<div className="absolute bottom-[30px] text-lg">
-				<span className="border border-white rounded-full px-[4px]">C</span>
-				<span> 2024 Aura Traits. All Rights Reserved</span>
+				<p className="text-white">&copy;{new Date().getFullYear()} All rights reserved.</p>
 			</div>
 		</div>
 	);
