@@ -15,29 +15,33 @@ const Navbar = () => {
 	return (
 		<nav
 			id="navbar"
-			className="flex justify-between items-baseline pt-8 relative text-white flex-wrap "
+			className="flex justify-between items-baseline pt-4 relative text-white flex-wrap "
 		>
-			<div className=" absolute top-[70px] flex gap-2 lg:gap-4 px-6 lg:ml-7 ml-1 text-xs lg:text-2xl">
-				<ul className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
+			<div className=" absolute top-[50px] flex gap-2 lg:gap-4 px-6 lg:ml-7 ml-1 text-xs lg:text-2xl">
+				<ul className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent">
 					Home
 				</ul>
 				<ul
 					onClick={handleAboutusClick}
-					className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent "
+					className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
 				>
 					About Us
 				</ul>
 			</div>
-			<div className=" absolute -right-3 lg:right-4 top-12 flex text-xs mr-3 lg:mr-5 lg:text-lg ">
+			<div className="absolute top-[30px] -right-3 lg:right-6 flex text-xs mr-3 lg:mr-5 lg:text-lg">
 				<div className="hover:bg-customgradientb hover:bg-clip-text hover:text-transparent">
-					<Button extraStyles=" rounded-lg lg:rounded-full px-1 lg:px-5 border border-white">
+					<Button
+						extraStyles="rounded-lg lg:rounded-full lg:px-5 border border-white absolute right-[70px] sm:right-36"
+						aria-label="Admin"
+					>
 						Admin
 					</Button>
 				</div>
-				<div className=" hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
+				<div className="hover:bg-customgradientb hover:bg-clip-text hover:text-transparent">
 					<Button
 						handleClick={handleCandidateClick}
-						extraStyles="  rounded-lg lg:rounded-full cursor-pointer px-1 lg:px-5 border-1 border-white hover:border-customgradientbb "
+						extraStyles="rounded-lg lg:rounded-full cursor-pointer lg:px-5 border border-white "
+						aria-label="Register as candidate"
 					>
 						Candidate
 					</Button>
