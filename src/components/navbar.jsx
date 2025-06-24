@@ -17,7 +17,7 @@ const Navbar = () => {
 			id="navbar"
 			className="flex justify-between items-baseline pt-8 relative text-white flex-wrap "
 		>
-			<div className=" absolute top-[40px] md:top-[70px] flex gap-2 lg:gap-4 px-6 lg:ml-7 ml-1 text-xs lg:text-2xl">
+			<div className=" absolute top-[70px] flex gap-2 lg:gap-4 px-6 lg:ml-7 ml-1 text-xs lg:text-2xl">
 				<ul className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
 					Home
 				</ul>
