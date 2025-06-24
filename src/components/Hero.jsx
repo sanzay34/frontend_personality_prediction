@@ -1,49 +1,65 @@
 import React from "react";
 import Landingpage from "../assets/landingpage.jpg";
 import Button from "./Button";
+
 const Hero = () => {
 	const handleExploreClick = () => {
-		document.getElementById("explore-section").scrollIntoView({behavior:"smooth"})
-	}
+		document
+			.getElementById("explore-section")
+			?.scrollIntoView({ behavior: "smooth" });
+	};
+
 	return (
-		<div className="bg-black w-full text-white">
-			<div className="flex flex-col   mt-[100px] lg:mt-[150px] ml-[100px] font-poppins">
-				<div className="lg:w-[1200px] lg:h-[600px] h-auto  bg-customGray-50 text-white font-bold text-3xl rounded-xl relative">
-					<p className=" py-[70px] lg:px-[100px] text-[40px] md:text-[65px] mb-3 ">
-						<span className="block mb-[20px] lg:mb-[40px]">Discover the</span>
-						<span className="block mb-[20px] lg:mb-[40px]">
-							<span className="bg-customgradient bg-clip-text text-transparent ">
-								Essence
-							</span>
-							<span> of who</span>
-						</span>
-						<span className="block"> you are</span>
-					</p>
-					<p className="md:text-[20px] text-[15px] font-poppins px-[100px] absolute top-[300px]">
+		<div className="bg-black w-full text-white font-poppins">
+			<div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-20">
+				{/* Left Text Section */}
+				<div className="lg:max-w-[600px] flex flex-col justify-center">
+					<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+						<span className="block">Discover the</span>
 						<span className="block">
-							Explore your personality like never before.Find out
+							<span className="bg-customgradient bg-clip-text text-transparent">
+								Essence
+							</span>{" "}
+							of who
+						</span>
+						<span className="block">you are</span>
+					</h1>
+
+					<p className="text-sm sm:text-base md:text-lg mt-6">
+						<span className="block">
+							Explore your personality like never before. Find out
 						</span>
 						<span className="block">
 							what your traits reveal about your energy,
 						</span>
-						<span className="block">potential and essence.</span>
+						<span className="block">potential, and essence.</span>
 					</p>
-					<Button extraStyles="rounded-lg md:px-7 md:py-2 border-white md:text-[25px]  ml-[100px] mt-[130px]  text-center bg-white hover:bg-black  ">
-						<span onClick={handleExploreClick} className="bg-customgradientb bg-clip-text text-transparent">
-							Explore
-						</span>
-					</Button>
+
+					<div className="mt-8">
+						<Button extraStyles="rounded-lg md:px-7 md:py-2 border border-white md:text-xl text-base bg-white hover:bg-black">
+							<span
+								onClick={handleExploreClick}
+								className="bg-customgradientb bg-clip-text text-transparent cursor-pointer"
+							>
+								Explore
+							</span>
+						</Button>
+					</div>
 				</div>
-				<div className=" w-[320px] h-[320px] md:w-[695px] md:h-[695px] bg-customGray-50 flex items-center justify-center rotate-[11deg] absolute right-[150px] top-[268px]">
-					<img
-						src={Landingpage}
-						alt="Landingpage image"
-						className=" w-[300px] h-[300px] md:w-[620px] md:h-[620px]
-						 "
-					/>
+
+				{/* Right Image Section */}
+				<div className="mt-10 lg:mt-0 flex justify-center items-center">
+					<div className="bg-customGray-50 rounded-xl p-4 rotate-3 flex justify-center items-center">
+						<img
+							src={Landingpage}
+							alt="Landingpage image"
+							className="w-64 h-64 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px] object-cover"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
 	);
 };
+
 export default Hero;

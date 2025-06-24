@@ -48,69 +48,70 @@ const Slider = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const nextSlide = () => {
-		setCurrentSlide((prev) => (prev + 1) % slides.length); // Cycle to the next slide
+		setCurrentSlide((prev) => (prev + 1) % slides.length);
 	};
-
 	const prevSlide = () => {
-		setCurrentSlide((prev) => (prev - 1) % slides.length); // Cycle to the previous slide
+		setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 	};
 
 	return (
-		<div id="explore-section" className="w-[1600px] h-[700px] bg-customGray-50 flex items-center overflow-hidden justify-center mt-[250px] rounded-xl ml-[100px] relative">
-			{/* Slide Container with Animation */}
-			<div
-				className="flex transition-transform duration-500 ease-in-out"
-				style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-			>
-				{slides.map((slide, index) => (
-					<div
-						key={index}
-						className="flex items-center justify-evenly w-full h-full shrink-0"
-					>
-						{/* Text Content */}
-						<div className="text-2xl w-[400px]">
-							<h2 className="font-bold text-[50px] mb-4 text-white">
-								{slide.title}
-							</h2>
-							<p className="text-white w-[650px] mt-10">{slide.description}</p>
-						</div>
+		<div id="explore-section" className="w-full flex justify-center mt-16">
+			<div className="relative w-full max-w-7xl rounded-xl overflow-hidden">
+				<div
+					className=" relative flex transition-transform duration-500 ease-in-out"
+					style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+				>
+					{slides.map((slide, index) => (
+						<div
+							key={index}
+							className="flex flex-col lg:flex-row items-center justify-evenly flex-none w-full p-4 lg:p-16"
+						>
+							{/* Text Section */}
+							<div className="lg:w-1/2 text-center lg:text-left">
+								<h2 className="font-bold text-3xl lg:text-5xl text-white">
+									{slide.title}
+								</h2>
+								<p className="text-white mt-4 text-base lg:text-lg lg:max-w-[600px]">
+									{slide.description}
+								</p>
+							</div>
 
-						{/* Image */}
-						<div className="flex-shrink-0">
-							<img
-								src={slide.image}
-								alt={slide.title}
-								className="w-[600px] h-[600px] object-cover rounded-xl"
-							/>
+							{/* Image Section */}
+							<div className="lg:w-1/2 flex justify-center mt-4 lg:mt-0">
+								<img
+									src={slide.image}
+									alt={slide.title}
+									className="w-64 h-64 sm:w-80 sm:h-80 md:w-[500px] md:h-[500px] object-cover rounded-xl"
+								/>
+							</div>
 						</div>
-					</div>
-				))}
+					))}
+				</div>
+
+				{/* Navigation Buttons */}
+				{currentSlide > 0 && (
+					<Button
+						handleClick={prevSlide}
+						extraStyles="absolute top-1/2 left-4 -translate-y-1/2 rounded-full p-2 border-none"
+					>
+						<FontAwesomeIcon
+							icon={faChevronLeft}
+							className="text-3xl text-white"
+						/>
+					</Button>
+				)}
+				{currentSlide < slides.length - 1 && (
+					<Button
+						handleClick={nextSlide}
+						extraStyles="absolute top-1/2 right-4 -translate-y-1/2 rounded-full p-2 border-none"
+					>
+						<FontAwesomeIcon
+							icon={faChevronRight}
+							className="text-3xl text-white"
+						/>
+					</Button>
+				)}
 			</div>
-			{/* Navigation Buttons */}
-			{currentSlide > 0 && (
-				<Button
-					disabled={currentSlide === 0}
-					handleClick={prevSlide}
-					extraStyles={` absolute top-1/2 left-4 border-none transform -translate-y-1/2 `}
-				>
-					<FontAwesomeIcon
-						icon={faChevronLeft}
-						className="text-5xl text-white"
-					/>
-				</Button>
-			)}
-			{currentSlide < slides.length - 1 && (
-				<Button
-					disabled={currentSlide === slides.length - 1}
-					handleClick={nextSlide}
-					extraStyles={` absolute top-1/2 right-4 border-none transform -translate-y-1/2`}
-				>
-					<FontAwesomeIcon
-						icon={faChevronRight}
-						className="text-5xl text-white"
-					/>
-				</Button>
-			)}
 		</div>
 	);
 };
