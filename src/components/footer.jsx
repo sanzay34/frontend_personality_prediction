@@ -44,33 +44,7 @@ const Footer = () => {
 					Discover and embrace your unique personality traits.
 				</div>
 
-				{/* Links */}
-				<div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 text-lg sm:text-xl font-poppins font-bold">
-					<div
-						onClick={handleHomeClick}
-						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
-					>
-						Home
-					</div>
-					<div
-						onClick={handleAboutusClick}
-						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
-					>
-						About Us
-					</div>
-					<div
-						onClick={handleExploreClick}
-						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
-					>
-						Explore
-					</div>
-					<div
-						onClick={handlePersonalityCheck}
-						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
-					>
-						Check your Personality Traits
-					</div>
-				</div>
+				
 
 				{/* Social Links */}
 				<div className="flex flex-col items-center space-y-3">

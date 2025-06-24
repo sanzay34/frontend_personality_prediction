@@ -30,11 +30,11 @@ const AutoScroll = () => {
 			id="scroll-section"
 			className="relative h-[600px] sm:h-[700px] lg:h-[800px] overflow-hidden mt-40 px-4"
 		>
-			<div className="flex animate-marquee whitespace-nowrap">
+			<div className="flex animate-marquee">
 				{[...cards, ...cards].map((card, index) => (
 					<div
 						key={index}
-						className="flex flex-col items-center justify-center flex-shrink-0 w-[300px] sm:w-[400px] lg:w-[600px] h-[500px] sm:h-[600px] lg:h-[700px] bg-customGray-50 rounded-2xl p-5 mx-4"
+						className="flex flex-col items-center justify-center flex-shrink-0 max-w-[300px] sm:max-w-[400px] lg:max-w-[600px] h-[500px] sm:h-[600px] lg:h-[700px] bg-customGray-50 rounded-2xl p-5 mx-4"
 					>
 						<img
 							src={card.image}
@@ -44,7 +44,7 @@ const AutoScroll = () => {
 						<h2 className="text-white text-3xl sm:text-4xl lg:text-5xl mt-5 text-center">
 							{card.title}
 						</h2>
-						<p className="text-white text-base sm:text-lg lg:text-xl mt-4 text-center max-w-[90%]">
+						<p className="text-white text-base sm:text-lg lg:text-xl mt-4 text-center max-w-[90%] whitespace-normal break-words">
 							{card.text}
 						</p>
 					</div>
