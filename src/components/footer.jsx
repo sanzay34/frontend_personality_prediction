@@ -9,84 +9,99 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-	const navigate = useNavigate()
+	const navigate = useNavigate();
+
 	const handlePersonalityCheck = () => {
-		navigate("/RegisterForm")
-	}
+		navigate("/RegisterForm");
+	};
 	const handleExploreClick = () => {
 		document
 			.getElementById("explore-section")
-			.scrollIntoView({ behavior: "smooth" });
+			?.scrollIntoView({ behavior: "smooth" });
 	};
 	const handleHomeClick = () => {
-		document
-			.getElementById("navbar")
-			.scrollIntoView({ behavior: "smooth" });
+		document.getElementById("navbar")?.scrollIntoView({ behavior: "smooth" });
 	};
 	const handleAboutusClick = () => {
 		document
 			.getElementById("scroll-section")
-			.scrollIntoView({ behavior: "smooth" });
+			?.scrollIntoView({ behavior: "smooth" });
 	};
+
 	return (
-		<div className="bg-customGray-50 w-[1600px] h-[500px] ml-[100px] rounded-3xl mb-[50px] relative px-[42px] py-[58px] text-white">
-			<div className="px-4 text-white text-center border border-white w-[300px] h-[70px] ">
-				<div className="text-5xl font-englebert">Aura Traits</div>
-				<div className="text-sm font-englebert tracking-[7px]">
-					Personality Predictor
+		<footer className="bg-customGray-50 rounded-3xl text-white px-6 py-12 mt-12">
+			<div className="max-w-7xl mx-auto flex flex-col items-center space-y-8">
+				{/* Branding */}
+				<div className="text-center border border-white rounded-lg p-4 w-[250px]">
+					<div className="text-3xl sm:text-4xl font-englebert">Aura Traits</div>
+					<div className="text-xs sm:text-sm font-englebert tracking-[5px]">
+						Personality Predictor
+					</div>
+				</div>
+
+				{/* Tagline */}
+				<div className="text-center text-lg sm:text-2xl font-poppins">
+					Discover and embrace your unique personality traits.
+				</div>
+
+				{/* Links */}
+				<div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 text-lg sm:text-xl font-poppins font-bold">
+					<div
+						onClick={handleHomeClick}
+						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
+					>
+						Home
+					</div>
+					<div
+						onClick={handleAboutusClick}
+						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
+					>
+						About Us
+					</div>
+					<div
+						onClick={handleExploreClick}
+						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
+					>
+						Explore
+					</div>
+					<div
+						onClick={handlePersonalityCheck}
+						className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
+					>
+						Check your Personality Traits
+					</div>
+				</div>
+
+				{/* Social Links */}
+				<div className="flex flex-col items-center space-y-3">
+					<div className="text-base sm:text-lg">auratraits@gmail.com</div>
+					<div className="flex space-x-5 text-2xl sm:text-3xl">
+						<FontAwesomeIcon
+							icon={faFacebook}
+							className="cursor-pointer hover:text-gray-300"
+						/>
+						<FontAwesomeIcon
+							icon={faTwitter}
+							className="cursor-pointer hover:text-gray-300"
+						/>
+						<FontAwesomeIcon
+							icon={faInstagram}
+							className="cursor-pointer hover:text-gray-300"
+						/>
+						<FontAwesomeIcon
+							icon={faEnvelope}
+							className="cursor-pointer hover:text-gray-300"
+						/>
+					</div>
+				</div>
+
+				<hr className="w-full border-t-2 border-white mt-4" />
+
+				<div className="text-base mt-2">
+					&copy; {new Date().getFullYear()} All rights reserved.
 				</div>
 			</div>
-			<div className="mt-8 text-2xl font-poppins">
-				Discover and embrace your unique personality traits.
-			</div>
-			<div className="flex justify-between w-[50%] absolute bottom-[85px] text-2xl font-poppins font-bold">
-				<div onClick={handleHomeClick} className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
-					Home
-				</div>
-				<div onClick={handleAboutusClick} className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
-					About Us
-				</div>
-				<div onClick={handleExploreClick} className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent ">
-					Explore
-				</div>
-				<div
-					onClick={handlePersonalityCheck}
-					className="cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent "
-				>
-					Check your Personality Traits
-				</div>
-			</div>
-			<div className="absolute bottom-[85px] text-xl left-[1325px]">
-				auratraits@gmail.com
-			</div>
-			<div className="absolute bottom-[120px] left-[1300px] flex space-x-9 flex-row">
-				{/* Facebook Icon */}
-				<FontAwesomeIcon
-					icon={faFacebook}
-					size="2x"
-					className="text-white text-[40px]  cursor-pointer"
-				/>
-				<FontAwesomeIcon
-					icon={faTwitter}
-					size="2x"
-					className="text-white text-[40px]  cursor-pointer"
-				/>
-				<FontAwesomeIcon
-					icon={faInstagram}
-					size="2x"
-					className="text-white text-[40px]  cursor-pointer"
-				/>
-				<FontAwesomeIcon
-					icon={faEnvelope}
-					size="2x"
-					className="text-white text-[40px]  cursor-pointer"
-				/>
-			</div>
-			<hr className="absolute bottom-[75px] left-0 w-full border-t-2 border-white" />
-			<div className="absolute bottom-[30px] text-lg">
-				<p className="text-white">&copy;{new Date().getFullYear()} All rights reserved.</p>
-			</div>
-		</div>
+		</footer>
 	);
 };
 
