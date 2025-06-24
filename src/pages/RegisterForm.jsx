@@ -36,7 +36,7 @@ const RegisterForm = () => {
 			<Horizontaline extrastyles="mt-12" />
 			<div
 				onClick={handleHomeClick}
-				className="absolute top-[-4px] left-[98px] text-xl md:text-2xl cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
+				className="absolute top-[-4px] left-[68px] md:left-[88px] text-xs md:text-2xl cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
 			>
 				Home
 			</div>
@@ -189,7 +189,9 @@ const RegisterForm = () => {
 									required
 								/>
 							</div>
-							<h2 className="text-xl md:text-2xl font-bold mt-6">Personal Description</h2>
+							<h2 className="text-xl md:text-2xl font-bold mt-6">
+								Personal Description
+							</h2>
 							<div className="min-w-12 min-h-3 gap-6 mt-4">
 								<Input
 									onChange={handleFormChange}

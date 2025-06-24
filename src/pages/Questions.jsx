@@ -86,7 +86,7 @@ const Questions = () => {
 			<Horizontaline extrastyles="mt-12" />
 			<div
 				onClick={handleHomeClick}
-				className="absolute top-[-4px] left-[98px] text-xl md:text-2xl cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
+				className="absolute top-[-4px] left-[68px] md:left-[108px] text-xs md:text-2xl cursor-pointer hover:bg-customgradientb hover:bg-clip-text hover:text-transparent"
 			>
 				Home
 			</div>
